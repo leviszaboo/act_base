@@ -17,8 +17,6 @@ RUN echo \
 
 RUN apt-get update
 
-RUN apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+RUN apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 RUN docker -v
-
-RUN docker run hello-world
